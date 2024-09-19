@@ -1,0 +1,392 @@
+.body-bg-color{
+  background-color: #072630;
+}
+#overlay{
+    position:fixed;
+    height:100vh;width:100%;
+    left:0;
+    top:0;
+    z-index:9999;
+}
+/**/
+.video-js .vjs-tech{
+    object-fit: inherit;
+}
+#video-container {
+    position: absolute;
+    width: 620px;
+    height: 620px;
+    overflow: hidden;
+        border-radius: 100%;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+@media(max-width:1400px){
+     #video-container {
+        position: absolute;
+        width: 588px;
+        height: 588px;
+        overflow: hidden;
+        border-radius: 100%;
+        bottom: 33px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media(max-width:1199px){
+#video-container {
+    position: absolute;
+    width: 488px;
+    height: 488px;
+    overflow: hidden;
+    border-radius: 100%;
+    bottom: 139px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+}
+@media(max-width:992px){
+#video-container {
+    position: absolute;
+    width: 367px;
+    height: 367px;
+    overflow: hidden;
+    border-radius: 100%;
+    bottom: 278px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+}
+@media(max-width:575px){
+#video-container {
+    position: absolute;
+    width: 616px;
+    height: 616px;
+    overflow: hidden;
+    border-radius: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+}
+#intro-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } #static-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
+/**/
+
+.header-background {
+  background-image: url("img/MABanner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position:relative;
+  height:700px;
+}
+
+.header-container {
+  position:absolute;
+}
+
+/* @media (min-width: 576px){
+
+  .container {
+    max-width: 1200px;
+    min-width: 1200px;
+}
+
+} */
+
+.container {
+  width: 1200px;
+}
+
+
+.dark-color-bg {
+    background-color: #202930;
+    color: white;
+}
+
+.teal-color-bg {
+    background-color: #32cbb7;
+    color: white;
+}
+
+.row-width {
+    width:1200px;
+}
+
+.dark-body-text {
+    color: #9fa4aa;
+}
+
+.sub-heading {
+    font-size: 0.7em;
+}
+
+.dark-h3 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    width: 2%;
+    height: 2%;
+
+
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .active.fade-right {
+    animation: fade-right 0.5s ease-in;
+  }
+
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  .orange-icon-circle{
+    background-color: orange;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    transition: transform .2s; /* Animation */
+    cursor: pointer;
+  }
+
+  .orange-icon-circle:hover {
+    transform: scale(1.2); 
+  }
+
+  .white-icon-circle{
+    background-color: white;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s; /* Animation */
+    cursor: pointer;
+  }
+
+  .white-icon-circle:hover {
+    transform: scale(1.2); 
+  }
+
+  .material-symbols-outlined {
+    font-size: 3em;
+  }
+
+  .teal-icon {
+    color: #32cbb7
+  }
+
+.skills-section {
+   background-color: #25303c;
+}
+
+.skills-row {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.a-link-white {
+    color:white;
+}
+
+
+
+
+
+
+
+input, textarea {
+    display: flex;
+    width: 100%;
+}
+
+.contact-form-button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#skills::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+#skills::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #bbb;
+}
+
+#skills li {
+  transition: font-size .2s ease-in-out;
+}
+
+#skills li.emphasize {
+  font-size: 20px;
+  font-weight: Bold;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+
+
+.zoom {
+
+  transition: transform .2s; /* Animation */
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.zoom:hover {
+  transform: scale(1.4); 
+}
+
+.zoomcircle {
+  transition: transform .2s; /* Animation */
+}
+
+.zoomcircle:hover {
+  transform: scale(1.1); 
+}
+
+div#DeepDiveModal.modal.fade.show, div#CharityModal.modal.fade.show, div#MrWorldwideModal.modal.fade.show, div#ITModal.modal.fade.show, div#salesModal.modal.fade.show, div#operationsModal.modal.fade.show, div#referenceModal.modal.fade.show, div#contactFormModal.modal.fade.show 
+{padding-right:0px!important;}
+
+
+.footer{
+  background-color: #211e1b;
+  color: white;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  p, li {
+    font-size: 3em;
+  }
+
+  h1, h2, h3{
+    font-size:3.5em;
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+  }
+
+  .sub-heading {
+    font-size: 2em;
+    font-color: white;
+    color: white;
+  }
+
+  #skills li.emphasize {
+    font-size: 3.5em;
+  }
+
+  li {
+    line-height:2em;
+  }
+
+  .orange-icon-circle , .white-icon-circle {
+    width: 15em;
+    height: 15em;
+    margin: 3em;
+  }
+  
+  .material-symbols-outlined {
+    font-size: 8em!important;
+  }
+
+  #video-play-button-1, #video-play-button-2, #video-play-button-3 {
+    width: 12em;
+    height: 12em;
+  }
+
+  .modal-content {
+    width: 520px!important;
+ 
+  }
+
+  .modal-dialog, #ITModal {
+ 
+    width: 520px;
+    padding-top:0px;
+    padding-right:0px;
+  }
+
+  .modal-backdrop{
+    width:100%;
+    height:100%;
+  }
+
+  .modal.show .modal-dialog{margin:0 auto;}
+
+  div#DeepDiveModal.modal.fade.show, div#CharityModal.modal.fade.show, div#MrWorldwideModal.modal.fade.show, div#ITModal.modal.fade.show, div#salesModal.modal.fade.show, div#operationsModal.modal.fade.show, div#referenceModal.modal.fade.show, div#contactFormModal.modal.fade.show 
+  {padding-right:0px!important; width:100%; margin-top:5%;}
+
+  .p-reference-phone, .p-reference-email{
+    font-size:.8em;
+  }
+
+  .overflow-auto{
+    height: 1500px!important;
+
+  }
+
+  .social-icons {
+    width: 10%;
+    height: 10%;
+   }
+
+   .socialtext{
+    display:none;
+   }
+
+  
+
+}
+
+
+
